@@ -1,24 +1,30 @@
 window.addEventListener('load', function(){
-    console.log('hello'); 
-    let pigBtn = document.querySelector('#pigged'); 
-
+    let phrase = document.querySelector('#notPigged'); 
+    let pigBtn = document.querySelector('#pigBtn'); 
+    let result = document.querySelector('#pigged'); 
     pigBtn.addEventListener('click', function (){
-        function pigIt(phrase) {
-            let array = phrase.split(' '); 
+        
+        return function pigIt(phrase) {
+            let array = phrase.value.split(' '); 
             console.log('array'); 
 
-            for (let i = 0; i < phrase.length; i++) {
+            for (let i = 0; i < array.length; i++) {
                 let pig = array[i].split(''); 
                 let one = pig.shift(); 
                 pig.push(one); 
                 pig.push('ay'); 
                 let two = pig.join(''); 
-
+                
                 array[i] = two; 
+             
+            }
+            console.log(array.join(' ')); 
+            result.value = array.join(' '); 
         }
-            return array.join(' '); 
-            // document.querySelector('#pigged').innerHTML = result
-        }
-     
-    }); 
+        
+        (phrase)
+        
+    });
 }); 
+
+// document.querySelector('#notPigged').
