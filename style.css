@@ -1,0 +1,38 @@
+body {
+    /*background-color:#f9f9f9; */
+}
+
+h1 {
+    text-align: center; 
+    font-family: 'Indie Flower', cursive;
+    font-size: 50px; 
+}
+
+#notPigged, #pigged {
+    border-radius: 50px; 
+    display: block; 
+    margin-left: 300px; 
+    margin-bottom: 20px; 
+}
+
+#img_person {
+    display: block; 
+    height: 300px; 
+    width: 400px; 
+    margin-bottom: 30px; 
+}
+
+#pigBtn {
+    margin-left: 500px;
+    margin-bottom: 100px; 
+    height: 50px; 
+    width: 50px; 
+    border-radius: 25px;  
+}
+
+#img_pig {
+    display: block; 
+    height: 250px; 
+    width: 200px; 
+    margin-left: 630px; 
+}
